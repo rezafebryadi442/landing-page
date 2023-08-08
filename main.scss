@@ -1,0 +1,60 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+// Variable
+$primaryColor: #ffffff;
+$secondaryColor: #6e92ce;
+$tertiaryColor: #f8e0b5;
+$textColor: #f25961;
+
+// Style
+body {
+  font-family: "Rubik", sans-serif;
+  background-image: url(../img/bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+}
+
+// Navigasi
+.custom-nav {
+  .navbar-brand {
+    img {
+      width: 25px;
+      height: 25px;
+      margin-top: -4px;
+    }
+    span {
+      color: $textColor;
+      font-weight: 400;
+      font-size: 1.4rem;
+      margin-left: 0.4em;
+      transform: 0.3s color ease;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $textColor;
+          font-weight: 300;
+          text-transform: uppercase;
+          margin-left: 2.4em;
+        }
+        &:hover {
+          color: darken($color: $tertiaryColor, 50%);
+        }
+
+        .sign-up-button {
+          background-color: $textColor;
+          color: white;
+          border-radius: 2em;
+          border: 0;
+          padding-left: 1em;
+          padding-right: 1em;
+        }
+      }
+    }
+  }
+}
